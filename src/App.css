@@ -1,0 +1,125 @@
+/* Global Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f4f8; /* Lighter background color */
+}
+
+.app-container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 30px; /* Increased padding for better spacing */
+  background-color: white;
+  border-radius: 10px; /* More rounded corners */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Stronger shadow */
+  border: 1px solid #e0e0e0; /* Light border for definition */
+}
+
+/* Heading */
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px; /* Added margin for space */
+  font-size: 2.5rem; /* Larger heading */
+}
+
+/* Filter Section */
+.filter-section {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px; /* Increased margin for better separation */
+}
+
+.filter-section button {
+  background-color: #e0e0e0; /* Soft background */
+  border: none;
+  padding: 12px 25px; /* Larger padding */
+  margin: 0 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 18px; /* Slightly larger font size */
+  transition: background-color 0.3s, transform 0.2s; /* Added transform for effect */
+}
+
+.filter-section button:hover {
+  background-color: #d4d4d4; /* Slightly darker on hover */
+  transform: scale(1.05); /* Scale up on hover */
+}
+
+.filter-section .active {
+  background-color: #007bff; /* Active button color */
+  color: white;
+}
+
+/* Content Section */
+.content-section {
+  text-align: center;
+}
+
+/* Grid Layout for Easy and Medium */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Responsive grid */
+  gap: 20px;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Card */
+.card {
+  border: 1px solid #ddd;
+  padding: 10px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s; /* Smooth shadow effect */
+}
+
+.card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}
+
+.card img {
+  max-width: 100%;
+  border-radius: 4px;
+  object-fit: cover; /* Ensures images are covered without distortion */
+}
+
+/* Pagination Buttons */
+.pagination {
+  margin-top: 30px; /* More space above buttons */
+}
+
+.pagination button {
+  background-color: #007bff;
+  border: none;
+  padding: 12px 20px; /* Larger padding */
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  margin: 0 10px;
+  font-size: 16px; /* Consistent button text size */
+  transition: background-color 0.3s, transform 0.2s; /* Added transform for effect */
+}
+
+.pagination button:hover {
+  background-color: #0056b3; /* Darker on hover */
+  transform: scale(1.05); /* Scale up on hover */
+}
+
+.pagination button:disabled {
+  background-color: #cccccc; /* Disabled button color */
+  cursor: not-allowed;
+}
+
+/* Additional styles for better visibility */
+p {
+  color: #666; /* Softer color for text */
+  font-size: 16px; /* Consistent font size */
+}
